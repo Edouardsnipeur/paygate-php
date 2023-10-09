@@ -72,16 +72,16 @@ class Paygate
     )
     {
         $url = Constants::BASE_URL_V1;
-        $this->curl->get($url . '/page', array(
-            "query" => [
-                "phone" => $phone_number,
-                "amount" => $amount,
-                "description" => $description,
-                "identifier" => $identifier,
-                "auth_token" => $this->auth_token,
-                "url" => $url,
-            ]
-        ));
+        $query = http_build_query([
+            "phone" => $phone_number,
+            "amount" => $amount,
+            "description" => $description,
+            "identifier" => $identifier,
+            "auth_token" => $this->auth_token,
+            "url" => $url,
+        ]);
+        header("Location: $url/page?$query");
+        exit();
     }
 
     public function verifyTransactionWithPaygateReference(
