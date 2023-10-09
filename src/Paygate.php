@@ -74,7 +74,7 @@ class Paygate
         $url = Constants::BASE_URL_V1;
         $this->curl->get($url . '/page', array(
             "query" => [
-                "phone_number" => $phone_number,
+                "phone" => $phone_number,
                 "amount" => $amount,
                 "description" => $description,
                 "identifier" => $identifier,
