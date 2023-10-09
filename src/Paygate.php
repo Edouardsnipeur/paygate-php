@@ -64,7 +64,7 @@ class Paygate
     }
 
     public function redirectPayNow(
-        string $phone_number,
+        string $phone_number = "",
         int $amount,
         string $identifier,
         string $url = null,

@@ -40,7 +40,8 @@ Using composer:
         phone_number : "99000000",
         amount : 1000,
         identifier : "993",
-        network : \Paygate\Network::FLOOZ
+        network : \Paygate\Network::FLOOZ,
+        description : "My description", //Optionnal
     );
         
 ```
@@ -49,10 +50,11 @@ Using composer:
 ```php
     // Example to schedule payout redirect Method
     $paygate->redirectPayNow(
-        phone_number : "99000000",
+        phone_number : "99000000", //Optionnal
         amount : 1000,
         identifier : "993",
-        identifier : "http://exemple.com"
+        url : "http://exemple.com", //Optionnal
+        description : "My description", //Optionnal
     );
         
 ```
