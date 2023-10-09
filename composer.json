@@ -1,5 +1,5 @@
 {
-    "name": "paygate/paygate-php",
+    "name": "paygateglobal/paygate-php",
     "description": "Sdk php pour PaygateGlobal",
     "type": "library",
     "require": {
@@ -22,5 +22,6 @@
     ],
     "scripts": {
         "test" : "./vendor/bin/phpunit"
-    }
+    },
+    "minimum-stability": "stable"
 }
