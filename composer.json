@@ -1,0 +1,26 @@
+{
+    "name": "paygate/paygate-php",
+    "description": "Sdk php pour PaygateGlobal",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Paygate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Edouard Zinnoussou",
+            "email": "42722304+Edouardsnipeur@users.noreply.github.com"
+        }
+    ],
+    "scripts": {
+        "test" : "./vendor/bin/phpunit"
+    }
+}
