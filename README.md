@@ -42,21 +42,13 @@ Using composer:
         identifier : "993",
         network : \Paygate\Network::FLOOZ
     );
-
-    // Example to schedule payout redirect Method
-    $response = $paygate->payNow(
-        phone_number : "99000000",
-        amount : 1000,
-        identifier : "993",
-        network : \Paygate\Network::FLOOZ
-    );
         
 ```
 #### EXAMPLE redirect Method
 
 ```php
     // Example to schedule payout redirect Method
-    $response = $paygate->redirectPayNow(
+    $paygate->redirectPayNow(
         phone_number : "99000000",
         amount : 1000,
         identifier : "993",
@@ -70,7 +62,7 @@ Using composer:
 | phone_number    | Numéro de téléphone mobile du Client |
 | amount      | Montant de la transaction sans la devise (Devise par défaut: FCFA)                   |
 | identifier    | Identifiant interne de la transaction de l’e-commerce. Cet identifiant doit etre unique.              |
-| network |  valeurs possibles: ```php \Paygate\Network::FLOOZ```, ```php \Paygate\Network::TMONEY``` |
+| network |  valeurs possibles: ```\Paygate\Network::FLOOZ```, ```\Paygate\Network::TMONEY``` |
 | url |  Lien de la page vers laquelle le client sera redirigé après le paiement |
 
 #### TRANSACTION $response Object
