@@ -64,14 +64,14 @@ class Paygate
     }
 
     public function redirectPayNow(
-        string $phone_number = "",
         int $amount,
         string $identifier,
         string $url = null,
+        string $phone_number = "",
         string $description = "",
     )
     {
-        $url = Constants::BASE_URL_V1;
+        $baseurl = Constants::BASE_URL_V1;
         $query = http_build_query([
             "phone" => $phone_number,
             "amount" => $amount,
@@ -80,8 +80,12 @@ class Paygate
             "auth_token" => $this->auth_token,
             "url" => $url,
         ]);
-        header("Location: $url/page?$query");
-        exit();
+        // header("Location: $baseurl/page?$query"); 
+        $redirect = "$baseurl/page?$query";
+        // echo "<script>location.href = '$redirect';</script>";
+        // wp_redirect($redirect);
+        // exit;
+        return $redirect;
     }
 
     public function verifyTransactionWithPaygateReference(

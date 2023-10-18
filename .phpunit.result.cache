@@ -1,1 +1,1 @@
-{"version":1,"defects":{"PaygateTest::testCanBeCreatedFromValidEmail":7,"PaygateTest::testPayNow":8},"times":{"PaygateTest::testCanBeCreatedFromValidEmail":0.034,"PaygateTest::testGetAuthToken":0.03,"PaygateTest::testPayNow":4.365}}
+{"version":1,"defects":{"PaygateTest::testCanBeCreatedFromValidEmail":7,"PaygateTest::testPayNow":3},"times":{"PaygateTest::testCanBeCreatedFromValidEmail":0.034,"PaygateTest::testGetAuthToken":1.023,"PaygateTest::testPayNow":7.632}}
