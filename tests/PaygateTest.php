@@ -25,7 +25,7 @@ final class PaygateTest extends TestCase
         $response = $this->paygate->payNow(
             phone_number : "92988508",
             amount : 1,
-            identifier : "9920",
+            identifier : "9120",
             network : Network::TMONEY,
         );
 

@@ -23,5 +23,10 @@
     "scripts": {
         "test" : "./vendor/bin/phpunit"
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    }
 }
