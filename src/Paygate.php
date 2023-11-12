@@ -33,7 +33,7 @@ class Paygate
         int $amount,
         string $identifier,
         string $network,
-        string $description = "",
+        string $description = ""
     )
     {
         $reponse = null;
@@ -68,7 +68,7 @@ class Paygate
         string $identifier,
         string $url = null,
         string $phone_number = "",
-        string $description = "",
+        string $description = ""
     )
     {
         $baseurl = Constants::BASE_URL_V1;
@@ -89,7 +89,7 @@ class Paygate
     }
 
     public function verifyTransactionWithPaygateReference(
-        string $tx_reference,
+        string $tx_reference
     )
     {
         $reponse = null;
@@ -117,7 +117,7 @@ class Paygate
     }
 
     public function verifyTransactionWithEcommerceId(
-        string $identifier,
+        string $identifier
     )
     {
         $reponse = null;
